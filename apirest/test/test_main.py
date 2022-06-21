@@ -6,6 +6,8 @@ clientes =TestClient(app)
 
 def test_index():
     response = clientes.get("/") #requests
-    data = {"message":"Hola mundo"}
+    data = {"message":"API-REST"}
     assert response.status_code == 200
     assert response.json() == data
+
+
