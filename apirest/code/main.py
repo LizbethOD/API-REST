@@ -65,4 +65,3 @@ async def clientes( id: int):
         cursor = connection.cursor()
         cursor.execute("DELETE FROM clientes WHERE id_cliente='{}' ;". format(id))
         return {"message":"Eliminacion de cliente realizada"}
-        
